@@ -3,6 +3,9 @@ layout: default
 title: "Happy Jekylling!"
 ---
 
-## You're ready to go!
+Welcome to My Home Page
 
-Start developing your Jekyll website.
+{% assign date = '2020-04-13T10:20:00Z' %}
+
+- Original date - {{ date }}
+- With timeago filter - {{ date | timeago }}
