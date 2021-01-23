@@ -1,8 +1,8 @@
 ## 🚀&nbsp; Here is about my blog
 
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-community-brightgreen.svg)](https://rubystyle.guide)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/farhaduneci/unecicodes/main)
-![Website](https://img.shields.io/website?down_message=Down&up_message=Up&url=https%3A%2F%2Ffarhaduneci.github.io%2Funecicodes%2F)
+[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/farhaduneci/unecicodes/main)](https://github.com/Farhaduneci/unecicodes/commits/main)
+[![Website](https://img.shields.io/website?down_message=Down&up_message=Up&url=https%3A%2F%2Ffarhaduneci.github.io%2Funecicodes%2F)](https://farhaduneci.github.io/unecicodes)
 
 This repository contains the **Jekyll related files and data of my personal blog**. 🌐 Jekyll is a blog-aware static site
 generator in Ruby, Jekyll was my first-ever experience with a SSG, and I felt in love with it, so I made my decision to
