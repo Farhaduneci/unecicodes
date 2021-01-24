@@ -32,5 +32,5 @@ setTimeout(() => {
 
   setTimeout(() => {
     clearInterval(interval);
-  }, 2000);
+  }, 4000);
 }, 3000);

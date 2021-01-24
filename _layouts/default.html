@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap" rel="stylesheet">
     
     {% seo %}
+
+    <script src="./dist/bundle.js"></script>
   </head>
-  <body class="bg-gray-50 h-full">
-    <canvas id="confetti" class="absolute w-full h-full left-0 top-0"></canvas>
-    <main class="h-full w-full">
+  <body class="bg-gray-50 p-5 relative overflow-hidden">
+    <canvas id="confetti" class="absolute w-full h-full left-0 top-0 z-20"></canvas>
+    
+    <main class="h-full w-full p-5 border-4 lg:border-0 border-dashed border-gray-700">
       {{ content }}
     </main>
   </body>
-
-  <script src="./dist/bundle.js"></script>
 </html>
