@@ -1,9 +1,10 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-git_source(:github) {|unecicodes| "https://github.com/#{repo_name}" }
+gem "webrick", "~> 1.7"
 
-gem 'jekyll', '~> 4.2'
+gem "jekyll", "~> 4.2"
 
 group :jekyll_plugins do
-  gem 'jekyll-timeago', '~> 0.13.1'
+  gem 'jekyll-seo-tag', '~> 2.7'
+  gem 'jekyll-sitemap', '~> 1.4'
 end

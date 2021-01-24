@@ -1,4 +1,39 @@
 title: "Farhad Uneci"
 
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+tagline: "Software engineering student"
+
+description: "A Software engineering student trying to be eager about anything related to computers."
+
+author: "Farhad Uneci"
+
+twitter:
+  username: farhaduneci
+  card: summary
+
+url: "https://farhaduneci.github.io/unecicodes"
+
+defaults:
+  -
+    scope:
+      path: "assets/**/*.pdf"
+    values:
+      sitemap: false
+
+social:
+  name: Farhad Uneci
+  links:
+    - https://github.com/farhaduneci    
+    - https://twitter.com/farhaduneci
+    - https://instagram.com/unecicodes
+    - https://www.linkedin.com/in/farhaduneci
+
+exclude: 
+  - assets/css/style.css    
+  - tailwind.config.js
+  - postcss.config.js
+  - package.json
+  - package-lock.json
+  - webpack.config.js
+  - README.md
+  - LICENSE
+  - index.js
