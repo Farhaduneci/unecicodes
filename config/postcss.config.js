@@ -4,8 +4,9 @@ module.exports = {
       purge: {
         enabled: true,
         content: [
-          './**/*.html',
-          './**/*.js',
+          './src/**/*.html',
+          './src/**/*.js',
+          './src/**/*.md',
         ]
       },
       darkMode: 'class',
@@ -13,13 +14,9 @@ module.exports = {
         extend: {
           fontFamily: {
             sans: ['Roboto Slab', 'serif', 'sans-serif'],
-        },
+          },
         },
       },
-      variants: {
-        extend: {},
-      },
-      plugins: [],
     },
     autoprefixer: {},
   }

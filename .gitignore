@@ -6,3 +6,5 @@ node_modules
 .jekyll-metadata
 dist
 src/assets/js
+src/assets/css/main.*.css
+src/_layouts/default.html
