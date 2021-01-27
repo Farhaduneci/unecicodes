@@ -28,9 +28,9 @@ setTimeout(() => {
       origin: { x: 1 },
       colors: colors
     });
-  }, 50);
+  }, 100);
 
   setTimeout(() => {
     clearInterval(interval);
-  }, 4000);
+  }, 2000);
 }, 3000);

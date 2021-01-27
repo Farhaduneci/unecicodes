@@ -4,14 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 
-    <title>{{ page.title }} &bull; {{ site.title }}</title>
+    {% seo %}
         
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap">
     
-    {% seo %}
-
-    <script src="./dist/bundle.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
   </head>
   <body class="bg-gray-50 p-5 relative overflow-hidden">
     <canvas id="confetti" class="absolute w-full h-full left-0 top-0 z-20"></canvas>
@@ -19,5 +20,7 @@
     <main class="h-full w-full p-5 border-4 lg:border-0 border-dashed border-gray-700">
       {{ content }}
     </main>
+
+    <script src="./assets/js/bundle.js"></script>
   </body>
 </html>

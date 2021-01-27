@@ -28,12 +28,4 @@ social:
     - https://www.linkedin.com/in/farhaduneci
 
 exclude: 
-  - assets/css/style.css    
-  - tailwind.config.js
-  - postcss.config.js
-  - package.json
-  - package-lock.json
-  - webpack.config.js
-  - README.md
-  - LICENSE
   - index.js
