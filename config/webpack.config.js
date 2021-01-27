@@ -5,7 +5,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   output: {
+    //Base path for exporting files
     path: path.resolve(__dirname, "../src/assets"),
+
+    //JS files saving path
     filename: "js/bundle.[contenthash].js",
   },
   module: {
@@ -15,7 +18,7 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
+            loader: MiniCssExtractPlugin.loader, //Used for extracting CSS files
             options: {
               publicPath: "./assets/css"
             }
@@ -42,7 +45,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: path.resolve(__dirname, "../src/_layouts/default.html"),
       template: path.resolve(__dirname, "../src/index.html"),
-      publicPath: "./assets/"
+      publicPath: "./assets/",
+      minify: false
     }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ['**/*', '!img/**', '!styles/**'],
