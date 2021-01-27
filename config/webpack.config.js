@@ -1,9 +1,11 @@
 const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   output: {
     path: path.resolve(__dirname, "../src/assets/js"),
-    filename: "bundle.js",
+    filename: "bundle.[contenthash].js",
   },
   module: {
     rules: [
@@ -29,5 +31,13 @@ module.exports = {
         ],
       },
     ],
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: path.resolve(__dirname, "../src/_layouts/default.html"),
+      template: path.resolve(__dirname, "../src/index.html"),
+      publicPath: "./assets/js"
+    }),
+    new CleanWebpackPlugin()
+  ]
 }

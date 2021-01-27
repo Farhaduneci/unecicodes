@@ -1,8 +1,10 @@
 import "./assets/css/style.css";
 
 const confetti = require('canvas-confetti');
+const canvas = document.createElement('canvas');
+canvas.classList = "absolute w-full h-full left-0 top-0 z-20";
 
-const canvas = document.getElementById('confetti');
+document.body.appendChild(canvas);
 
 var myConfetti = confetti.create(canvas, {
   resize: true,

@@ -29,3 +29,4 @@ social:
 
 exclude: 
   - index.js
+  - index.html
