@@ -1,4 +1,4 @@
-## 🚀&nbsp; Here is about my blog
+# 🚀&nbsp; [Farhaduneci.github.io/Unecicodes](https://farhaduneci.github.io/unecicodes)
 
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-community-brightgreen.svg)](https://rubystyle.guide)
 [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/farhaduneci/unecicodes/main)](https://github.com/Farhaduneci/unecicodes/commits/main)
@@ -38,6 +38,4 @@ to understand what's going on here...
 
 This repository is released under the under terms of the [MIT License](LICENSE).
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-ruby.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/designed-in-inkscape.svg)](https://forthebadge.com)
