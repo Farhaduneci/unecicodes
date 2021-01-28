@@ -3,6 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const baseUrl = "https://farhaduneci.github.io/unecicodes/";
+
 module.exports = {
   output: {
     //Base path for exporting files
@@ -20,7 +22,7 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader, //Used for extracting CSS files
             options: {
-              publicPath: "./assets/css"
+              publicPath: baseUrl + "assets/css"
             }
           },
           {
@@ -45,8 +47,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: path.resolve(__dirname, "../src/_layouts/default.html"),
       template: path.resolve(__dirname, "../src/index.html"),
-      publicPath: "./assets/",
-      minify: false
+      publicPath: baseUrl + "assets/",
+      minify: false,
+      base: baseUrl
     }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ['**/*', '!img/**', '!styles/**'],
