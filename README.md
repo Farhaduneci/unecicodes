@@ -1,4 +1,4 @@
-# 🚀&nbsp; [Farhaduneci.github.io/Unecicodes](https://farhaduneci.github.io/unecicodes)
+# 🚀&nbsp; [Launch the website](https://farhaduneci.github.io)
 
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-community-brightgreen.svg)](https://rubystyle.guide)
 [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/farhaduneci/unecicodes/main)](https://github.com/Farhaduneci/unecicodes/commits/main)
