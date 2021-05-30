@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Farhad Uneci &bullet; Backend Developer</title>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<meta
+			name="description"
+			content="Software engineering student, Backend development eager."
+		/>
+		<meta name="keywords" content="Farhad Uneci, farhaduneci, uneci" />
 
-<head>
-  <meta charset="UTF-8">
-  <title>
-    Farhad Uneci &bullet; Backend Developer
-  </title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="Software engineering student, Backend development eager.">
-  <meta name="keywords" content="Farhad Uneci, farhaduneci, uneci">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap" rel="stylesheet">
+	<body>
+		<div id="container">
+			<span id="text1"></span>
+			<span id="text2"></span>
+		</div>
 
-  <link rel="stylesheet" href="css/css-normalize.min.css">
-  <link rel="stylesheet" href="css/css-bootstrap.min.css">
-  <link rel="stylesheet" href="css/css-style.css">
-  <link rel="stylesheet" href="css/css-reveal.css">
-</head>
+    <div id="stack">
+      <a href="https://github.com/farhaduneci">
+        <img alt="GitHub" src="https://img.shields.io/badge/github-000.svg?&style=for-the-badge&logo=github&logoColor=white"/>
+      </a>
 
-<body>
-  <div id="triangles"></div>
+      <a href="https://dev.to/farhaduneci">
+        <img alt="Dev.to blog" src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" >
+      </a>
 
-  <div class="content">
-    <a class="btn" href="http://github.com/farhaduneci/" target="_blank" rel="noopener noreferrer">
-      Visit my GitHub account
-    </a>
+      <a href="https://www.linkedin.com/in/farhad-uneci">
+        <img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-0077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/>
+      </a>
+    </div>
 
-    <h5>
-      This website is still under construction!
-    </h5>
-  </div>
-
-  <script>
-    var TEXT = "Hello World",
-      TEXT2 = "I'm Farhad Uneci"
-  </script>
-
-  <script src="js/5478-js-jquery.min.js"></script>
-  <script src="js/9044-js-anime.min.js"></script>
-  <script src="js/9194-js-reveal.js"></script>
-  <script src="js/2229-js-TimelineLite.min.js"></script>
-  <script src="js/8641-js-three.min.js"></script>
-  <script src="js/5122-js-THREE.MeshLine.js"></script>
-  <script src="js/7332-js-TweenLite.min.js"></script>
-  <script src="js/3134-js-EasePack.min.js"></script>
-  <script src="js/4484-js-fontFile.js"></script>
-  <script src="js/9809-js-canvas.js"></script>
-  <script src="js/935-js-index.js"></script>
-</body>
-
+		<!-- The SVG filter used to create the merging effect -->
+		<svg id="filters">
+			<defs>
+				<filter id="threshold">
+					<!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+					<feColorMatrix
+						in="SourceGraphic"
+						type="matrix"
+						values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 255 -140"
+					/>
+				</filter>
+			</defs>
+		</svg>
+	</body>
+  <script src="index.js"></script>
 </html>
